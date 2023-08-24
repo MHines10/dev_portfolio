@@ -203,7 +203,6 @@ section .title {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
-  color: white;
 }
 
 .main_section .main_section-content .text-3 {
@@ -212,7 +211,7 @@ section .title {
 }
 
 .main_section .main_section-content .text-3 span {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 145, 0);
   font-weight: 500;
 }
 
