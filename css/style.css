@@ -619,7 +619,7 @@ section .title {
 }
 
 .contact .contact-content .info .sub-title {
-  color: #333;
+  color: rgb(255, 123, 0);
 }
 
 /* - - - contact .fill_part - - -  */
