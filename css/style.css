@@ -23,15 +23,15 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: black;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: aqua;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgb(0, 88, 88);
 }
 
 section {
