@@ -117,7 +117,6 @@ section .title {
 .navbar .menu li a {
   display: block;
   color: rgb(141, 141, 141);
-  /* color: aqua; */
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -359,7 +358,7 @@ section .title {
 
 .services .services_body .card {
   width: calc(33% - 20px);
-  background: #222;
+  background: #474747;
   text-align: center;
   border-radius: 6px;
   padding: 50px 25px;
@@ -507,7 +506,7 @@ section .title {
 /* = = = teams section  = = = */
 
 .teams .carousel .card {
-  background: #222;
+  background: #474747;
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
@@ -517,6 +516,8 @@ section .title {
 
 .teams .carousel .card:hover {
   background: aqua;
+  color: black;
+  cursor: pointer;
 }
 
 .teams .carousel .card .box {
@@ -547,7 +548,8 @@ section .title {
 }
 
 .teams .carousel .card:hover img {
-  border-color: #fff;
+  /* border-color: #fff; */
+  border-color: rgb(255, 123, 0);
 }
 
 .owl-dots {
