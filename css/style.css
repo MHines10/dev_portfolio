@@ -744,7 +744,8 @@ section .title {
   .menu-btn {
     display: block;
     z-index: 999;
-    color: aqua;
+    color: rgb(255,123,0);
+    text-shadow: 0.9px 0.9px 0px black;
   }
 
   .menu-btn i.active:before {
