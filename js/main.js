@@ -1,3 +1,4 @@
+// Sticky Nav
 $(document).ready(function () {
     $(window).scroll(function () {
         if (this.scrollY > 20) {
@@ -12,7 +13,7 @@ $(document).ready(function () {
             $('.scroll_top').removeClass("show");
         }
     });
-
+    
     $('.scroll_top').click(function () {
         $('html').animate({ scrollTop: 0 });
         $('html').css("scrollBehavior", "auto");
@@ -21,19 +22,20 @@ $(document).ready(function () {
     $('.navbar .menu li a').click(function () {
         $('html').css("scrollBehavior", "smooth");
     });
-
+    
     $('.menu-btn').click(function () {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
+    // Typing Effect
     var typed = new Typed(".typing", {
         strings: ["Developer", "Freelancer", "Designer"],
         typeSpeed: 120,
         backSpeed: 60,
         loop: true
     });
-
+    
     var typed = new Typed(".typing-2", {
         strings: ["Developer", "Freelancer", "Designer"],
         typeSpeed: 120,
@@ -63,4 +65,5 @@ $(document).ready(function () {
             }
         }
     });
+
 });

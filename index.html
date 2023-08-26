@@ -85,7 +85,7 @@
                     <img src="images/1676155402763.jpeg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">Montrelle(Monti) and I'm a <span class="typing-2"></span></div>
+                    <div class="text">Montrelle(<span class="aka-monti">Monti</span>) and I'm a <span class="typing-2"></span></div>
                     <p>A Full-Stack developer who is passionate about martial arts, anime, and globetrotting. Whether I'm perfecting my roundhouse kick, binge-watching the latest anime series, or exploring a new country, I'm always seeking out new experiences and challenges.
                         <br>
                         When I'm not coding or training, you can find me planning my next adventure or enjoying some downtime with my family and friends. I'm a firm believer in the power of balance, and I strive to bring that to all areas of my life - both personal and professional.</p>
@@ -344,7 +344,23 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+        </script>
+        <!-- Lenis Smooth Scroll -->
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+        <script>
+              const lenis = new Lenis()
+      
+              lenis.on('scroll', (e) => {
+              console.log(e)
+              })
+              
+              function raf(time) {
+              lenis.raf(time)
+              requestAnimationFrame(raf)
+              }
+              
+              requestAnimationFrame(raf)
+        </script> 
 </body>
 
 </html>

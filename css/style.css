@@ -340,6 +340,10 @@ section .title {
   color: aqua;
 }
 
+.aka-monti{
+  color: rgb(255, 123, 0);
+}
+
 /* = = = services section = = = */
 .services,
 .teams {
