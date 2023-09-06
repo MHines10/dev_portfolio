@@ -1,4 +1,4 @@
-// Sticky Nav
+// Sticky Nav and got to top button
 $(document).ready(function () {
     $(window).scroll(function () {
         if (this.scrollY > 20) {

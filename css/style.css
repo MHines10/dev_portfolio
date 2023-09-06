@@ -142,21 +142,17 @@ section .title {
 /* = = = scroll = = =  */
 .scroll_top {
   position: fixed;
-  padding-top: 4px;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background: aqua;
   right: 30px;
   bottom: 10px;
   text-align: center;
-  color: black;
+  color: aqua;
+  text-shadow: 0rem 0.2rem 0 black;
   z-index: 9999;
   font-size: 30px;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
 }
 
 .scroll_top.show {
@@ -166,7 +162,7 @@ section .title {
 }
 
 .scroll_top:hover {
-  opacity: 0.6;
+  color: #ff7b00;
 }
 
 /* = = = home section = = = */
@@ -397,13 +393,9 @@ section .title {
 /* = = = skills section = = = */
 
 .skills {
-  background-color: rgba(255, 123, 0, 0.432);
-}
-
-.skills-second-bg {
-  background:#f9e8d5 ;
-  margin: 0 3em;
-  padding: 3em 0;
+  background-color: white;
+  border: 0.5em solid rgb(255, 123, 0);
+  border-style: double;
 }
 
 .skills .skills-content .column {
@@ -455,6 +447,8 @@ section .title {
 .skills .skills-content .right span {
   font-weight: 500;
   font-size: 18px;
+  color: rgb(26, 26, 26);
+  text-shadow: 0.05em 0.05em 0.1em rgb(255, 123, 0);
 }
 
 .skills .skills-content .right .line {
@@ -465,6 +459,7 @@ section .title {
   border-bottom-right-radius: 35px;
   border-top-right-radius: 35px;
   border: 2px solid aqua;
+  box-shadow: 0.3em 0.3em 0.5em black;
 }
 
 .skills .skills-content .right .line::before {
@@ -555,7 +550,6 @@ section .title {
 }
 
 .teams .carousel .card:hover img {
-  /* border-color: #fff; */
   border-color: rgb(255, 123, 0);
 }
 
