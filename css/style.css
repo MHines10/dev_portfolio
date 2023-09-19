@@ -356,6 +356,26 @@ section .title {
 }
 
 /* = = = services section = = = */
+.services-bg {
+  background-image: url(/images/tech-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  border: 0.1em double aqua;
+}
+
+.services-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #111111bd;
+}
+
+.services-title {
+  color: #fff;
+}
+
 .services .title::after{
   content: '';
   display: block;
@@ -374,8 +394,6 @@ section .title {
   from {width: 0;}
   to {width: 2.5em;}
 }
-
-.services,
 .teams {
   color: #fff;
   background: #111;
@@ -431,9 +449,21 @@ section .title {
 /* = = = skills section = = = */
 
 .skills {
-  background-color: white;
-  border: 0.5em solid rgb(255, 123, 0);
-  border-style: double;
+  /* background-color: white; */
+  background-image: url(/images/w-tech-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0.2em solid rgb(255, 123, 0);
+  /* border-style: double; */
+  position: relative;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  opacity: 0.9;
 }
 
 .skills .title::after{
