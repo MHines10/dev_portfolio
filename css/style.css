@@ -424,10 +424,12 @@ section .title {
 
 .services .services_body .card .box {
   transition: all 0.3s ease;
+  color: white;
 }
 
 .services .services_body .card:hover .box {
   transform: scale(1.05);
+  color: black;
 }
 
 .services .services_body .card i {
