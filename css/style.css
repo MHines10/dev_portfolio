@@ -360,6 +360,7 @@ section .title {
   background-image: url(/images/tech-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
   overflow: hidden;
   border: 0.1em double aqua;
@@ -451,12 +452,11 @@ section .title {
 /* = = = skills section = = = */
 
 .skills {
-  /* background-color: white; */
   background-image: url(/images/w-tech-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   border: 0.2em solid rgb(255, 123, 0);
-  /* border-style: double; */
   position: relative;
 }
 
@@ -492,7 +492,7 @@ section .title {
 }
 
 .skills .skills-content .left .text {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -500,6 +500,7 @@ section .title {
 .skills .skills-content .left p {
   text-align: justify;
   line-height: 30px;
+  font-weight: 600;
 }
 
 .skills .skills-content .left a {
