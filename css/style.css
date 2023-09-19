@@ -274,6 +274,25 @@ section .title {
 
 /* = = = about section = = = */
 
+.about .title::after{
+  content: '';
+  display: block;
+  width: 2em;
+  height: 0.2em;
+  background-color: aqua;
+  margin: auto 12.1em;
+  border-radius: 0.5em;
+  animation-name: grow;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes grow {
+  from {width: 0;}
+  to {width: 2em;}
+}
+
 .about .about-content .left {
   width: 45%;
 }
@@ -337,6 +356,25 @@ section .title {
 }
 
 /* = = = services section = = = */
+.services .title::after{
+  content: '';
+  display: block;
+  width: 2.5em;
+  height: 0.2em;
+  background-color: rgb(255, 123, 0);
+  margin: auto 11.6em;
+  border-radius: 0.5em;
+  animation-name: grow1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes grow1 {
+  from {width: 0;}
+  to {width: 2.5em;}
+}
+
 .services,
 .teams {
   color: #fff;
@@ -396,6 +434,25 @@ section .title {
   background-color: white;
   border: 0.5em solid rgb(255, 123, 0);
   border-style: double;
+}
+
+.skills .title::after{
+  content: '';
+  display: block;
+  width: 2em;
+  height: 0.2em;
+  background-color: aqua;
+  margin: auto 12.3em;
+  border-radius: 0.5em;
+  animation-name: grow2;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes grow2 {
+  from {width: 0;}
+  to {width: 2em;}
 }
 
 .skills .skills-content .column {
@@ -507,6 +564,25 @@ section .title {
 
 /* = = = projects section  = = = */
 
+.teams .title::after{
+  content: '';
+  display: block;
+  width: 2.5em;
+  height: 0.2em;
+  background-color: rgb(255, 123, 0);
+  margin: auto 11.6em;
+  border-radius: 0.5em;
+  animation-name: grow3;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes grow3 {
+  from {width: 0;}
+  to {width: 2.5em;}
+}
+
 .teams .carousel .card {
   background: #474747;
   border-radius: 6px;
@@ -582,6 +658,25 @@ section .title {
 
 .contact {
   background-color: #222;
+}
+
+.contact .title::after{
+  content: '';
+  display: block;
+  width: 2.3em;
+  height: 0.2em;
+  background-color: rgb(255, 123, 0);
+  margin: auto 11.8em;
+  border-radius: 0.5em;
+  animation-name: grow4;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes grow4 {
+  from {width: 0;}
+  to {width: 2.3em;}
 }
 
 .contact .contact-content .column {
