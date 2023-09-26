@@ -1,4 +1,107 @@
 /* = = = = = = = = = = = = = =  responsive media query = = = = = = = = = = = = = =  */
+
+
+/* title animations */
+@media (min-width: 1366px) {
+  .about .title::after{
+    content: '';
+    display: block;
+    width: 2em;
+    height: 0.2em;
+    background-color: aqua;
+    margin: auto 12.1em;
+    border-radius: 0.5em;
+    animation-name: grow;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes grow {
+    from {width: 0;}
+    to {width: 2em;}
+  }
+  
+  .services .title::after{
+    content: '';
+    display: block;
+    width: 2.5em;
+    height: 0.2em;
+    background-color: rgb(255, 123, 0);
+    margin: auto 11.6em;
+    border-radius: 0.5em;
+    animation-name: grow1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes grow1 {
+    from {width: 0;}
+    to {width: 2.5em;}
+  }
+  
+  .skills .title::after{
+    content: '';
+    display: block;
+    width: 2em;
+    height: 0.2em;
+    background-color: aqua;
+    margin: auto 12.3em;
+    border-radius: 0.5em;
+    animation-name: grow2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes grow2 {
+    from {width: 0;}
+    to {width: 2em;}
+  }
+  
+  .teams .title::after{
+    content: '';
+    display: block;
+    width: 2.5em;
+    height: 0.2em;
+    background-color: rgb(255, 123, 0);
+    margin: auto 11.6em;
+    border-radius: 0.5em;
+    animation-name: grow3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes grow3 {
+    from {width: 0;}
+    to {width: 2.5em;}
+  }
+  
+  .contact .title::after{
+    content: '';
+    display: block;
+    width: 2.3em;
+    height: 0.2em;
+    background-color: rgb(255, 123, 0);
+    margin: auto 11.8em;
+    border-radius: 0.5em;
+    animation-name: grow4;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes grow4 {
+    from {width: 0;}
+    to {width: 2.3em;}
+  }
+  
+}
+
+
+/* Responsize sizing */
 @media (max-width: 1104px) {
     .about .about-content .left img {
       height: 350px;
@@ -229,5 +332,24 @@
       background-attachment: fixed;
       background-position: center;
       font-family: "Kanit", sans-serif;
+    }
+
+    .about .title::after{
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      background-color: aqua;
+      margin: auto 0;
+      border-radius: 0;
+      animation-name: grow;
+      animation-timing-function: ease-in-out;
+      animation-duration: 0s;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes grow {
+      from {width: 0;}
+      to {width: 0;}
     }
   }

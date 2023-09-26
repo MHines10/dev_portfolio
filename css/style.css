@@ -274,25 +274,6 @@ section .title {
 
 /* = = = about section = = = */
 
-.about .title::after{
-  content: '';
-  display: block;
-  width: 2em;
-  height: 0.2em;
-  background-color: aqua;
-  margin: auto 12.1em;
-  border-radius: 0.5em;
-  animation-name: grow;
-  animation-timing-function: ease-in-out;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes grow {
-  from {width: 0;}
-  to {width: 2em;}
-}
-
 .about .about-content .left {
   width: 45%;
 }
@@ -377,24 +358,6 @@ section .title {
   color: #fff;
 }
 
-.services .title::after{
-  content: '';
-  display: block;
-  width: 2.5em;
-  height: 0.2em;
-  background-color: rgb(255, 123, 0);
-  margin: auto 11.6em;
-  border-radius: 0.5em;
-  animation-name: grow1;
-  animation-timing-function: ease-in-out;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes grow1 {
-  from {width: 0;}
-  to {width: 2.5em;}
-}
 .teams {
   color: #fff;
   background: #111;
@@ -452,42 +415,6 @@ section .title {
 }
 
 /* = = = skills section = = = */
-
-.skills {
-  background-image: url(/images/w-tech-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  border: 0.2em solid rgb(255, 123, 0);
-  position: relative;
-}
-
-.skills::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: #fff;
-  opacity: 0.9;
-}
-
-.skills .title::after{
-  content: '';
-  display: block;
-  width: 2em;
-  height: 0.2em;
-  background-color: aqua;
-  margin: auto 12.3em;
-  border-radius: 0.5em;
-  animation-name: grow2;
-  animation-timing-function: ease-in-out;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes grow2 {
-  from {width: 0;}
-  to {width: 2em;}
-}
 
 .skills .skills-content .column {
   width: calc(50% - 30px);
@@ -599,25 +526,6 @@ section .title {
 
 /* = = = projects section  = = = */
 
-.teams .title::after{
-  content: '';
-  display: block;
-  width: 2.5em;
-  height: 0.2em;
-  background-color: rgb(255, 123, 0);
-  margin: auto 11.6em;
-  border-radius: 0.5em;
-  animation-name: grow3;
-  animation-timing-function: ease-in-out;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes grow3 {
-  from {width: 0;}
-  to {width: 2.5em;}
-}
-
 .teams .carousel .card {
   background: #474747;
   border-radius: 6px;
@@ -693,25 +601,6 @@ section .title {
 
 .contact {
   background-color: #222;
-}
-
-.contact .title::after{
-  content: '';
-  display: block;
-  width: 2.3em;
-  height: 0.2em;
-  background-color: rgb(255, 123, 0);
-  margin: auto 11.8em;
-  border-radius: 0.5em;
-  animation-name: grow4;
-  animation-timing-function: ease-in-out;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes grow4 {
-  from {width: 0;}
-  to {width: 2.3em;}
 }
 
 .contact .contact-content .column {
