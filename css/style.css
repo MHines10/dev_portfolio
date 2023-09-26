@@ -416,6 +416,23 @@ section .title {
 
 /* = = = skills section = = = */
 
+.skills {
+  background-image: url(/images/w-tech-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border: 0.2em solid rgb(255, 123, 0);
+  position: relative;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  opacity: 0.9;
+}
+
 .skills .skills-content .column {
   width: calc(50% - 30px);
 }
