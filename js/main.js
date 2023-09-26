@@ -65,4 +65,46 @@ $(document).ready(function () {
             }
         }
     });
+
+    // // Function to open the lightbox
+    // function openLightbox(imageSrc) {
+    //     const lightbox = document.getElementById('lightbox');
+    //     const lightboxImage = document.getElementById('lightbox-image');
+
+    //     lightboxImage.src = imageSrc;
+    //     lightbox.style.display = 'flex';
+    // }
+
+    // // Function to close the lightbox
+    // function closeLightbox() {
+    //     const lightbox = document.getElementById('lightbox');
+    //     lightbox.style.display = 'none';
+    // }
+});
+
+// Function to open the lightbox
+function openLightbox(imageSrc) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+
+    lightboxImage.src = imageSrc;
+    lightbox.style.display = 'flex';
+}
+
+// Function to close the lightbox
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+}
+
+// Function to load more images (you can customize this)
+function loadMoreImages() {
+    // You can fetch more images from a server here and append them to the .gallery container
+}
+
+// Add event listener to close the lightbox when clicking outside of the image
+document.getElementById('lightbox').addEventListener('click', function (event) {
+    if (event.target === this) {
+        closeLightbox();
+    }
 });
