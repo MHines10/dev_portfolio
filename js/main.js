@@ -93,3 +93,9 @@ document.getElementById('lightbox').addEventListener('click', function (event) {
         closeLightbox();
     }
 });
+
+// JavaScript to hide the loader when the page is fully loaded
+window.addEventListener('load', function () {
+    var loaderContainer = document.querySelector('.loader-container');
+    loaderContainer.style.display = 'none';
+});
