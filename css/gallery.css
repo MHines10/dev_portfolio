@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: fantasy;
+    height: 100vh;
+    background: #000;
+  }
+  
+  .container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100vw;
+    height: 100vh;
+  }
+  
+  .right-slide__part {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 30%;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .right-slide__part > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .right-slide__part div:nth-child(1) {
+    background-color: #cb1a2e;
+  }
+  
+  .right-slide__part div:nth-child(2) {
+    background-color: #969998;
+  }
+  
+  .right-slide__part div:nth-child(3) {
+    background-color: #41395b;
+  }
+  
+  .right-slide__part div:nth-child(4) {
+    background-color: aqua;
+  }
+  
+  .right-slide__part div:nth-child(5) {
+    background-color: #f9490d;
+  }
+  
+  .right-slide__part h1 {
+    margin-top: 220px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.2rem 0.1rem 0 white;
+    text-align: center;
+    padding: 20px;
+    word-spacing: 0.3rem;
+  }
+  
+  .left-slide__part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide_1 {
+    background-image: url("img_1/4-9-2023_la0Xhv8opA.png");
+  }
+  
+  .slide_2 {
+    background-image: url("img_1/mhines_webport.png");
+  }
+  
+  .slide_3 {
+    background-image: url("img_1/kenashika_modern_clean_website_for_bakery_and_pastry_company_me_e570c165-3a51-46b6-8a67-0e1a8827cb2d.png");
+  }
+  
+  .slide_4 {
+    background-image: url("img_1/Kenashika_UIUX.png");
+  }
+  
+  .slide_5 {
+    background-image: url("img_1/mechanic-website.png");
+  }
+  .left-slide__part > div {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  button {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 15px;
+    opacity: 0.8;
+  }
+  
+  button:hover {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    text-shadow: 0 0 0.5rem white;
+    opacity: 0.9;
+  }
+  
+  .container .buttons_part button {
+    position: absolute;
+    right: 26.4%;
+    top: 50%;
+    z-index: 2;
+  }
+  
+  .container .buttons_part .btn_down {
+    transform: translateX(-100%);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 95px;
+  }
+  
+  .container .buttons_part .btn_up {
+    transform: translateY(-100%);
+    border-top-right-radius: 95px;
+    border-bottom-right-radius: 50%;
+  }
+  
+  
+   /* Media query for mobile screens */
+   @media screen and (max-width: 768px) {
+  
+    .right-slide__part h1 {
+      margin-top: 220px;
+      font-size: 1.1rem;
+      color: rgb(0, 0, 0);
+      text-shadow: 0.2rem 0.1rem 0 white;
+      text-align: center;
+      padding: 20px;
+      word-spacing: 0.2rem;
+    }
+  
+    button {
+      border: none;
+      cursor: pointer;
+      font-size: 0.8rem;
+      padding: 9px;
+      opacity: 0.8;
+    }
+    
+    button:hover {
+      background-color: rgb(44, 44, 44);
+      color: white;
+      text-shadow: 0 0 0.5rem white;
+      opacity: 0.9;
+    }
+    
+    .container .buttons_part button {
+      position: absolute;
+      right: 22.5%;
+      top: 50%;
+      z-index: 2;
+    }
+  }
