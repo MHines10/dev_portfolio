@@ -48,7 +48,7 @@ $(document).ready(function () {
         margin: 20,
         loop: true,
         autoplay: true,
-        autoplayTimeOut: 2000,
+        autoplayTimeOut: 1000,
         autoplayHoverPause: true,
         responsive: {
             0: {
@@ -65,21 +65,6 @@ $(document).ready(function () {
             }
         }
     });
-
-    // // Function to open the lightbox
-    // function openLightbox(imageSrc) {
-    //     const lightbox = document.getElementById('lightbox');
-    //     const lightboxImage = document.getElementById('lightbox-image');
-
-    //     lightboxImage.src = imageSrc;
-    //     lightbox.style.display = 'flex';
-    // }
-
-    // // Function to close the lightbox
-    // function closeLightbox() {
-    //     const lightbox = document.getElementById('lightbox');
-    //     lightbox.style.display = 'none';
-    // }
 });
 
 // Function to open the lightbox
