@@ -136,19 +136,6 @@
     border-top-right-radius: 95px;
     border-bottom-right-radius: 50%;
   }
-
-  .back .back-btn {
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    text-shadow: 0 0 0.5rem white;
-  }
-  .back .back-btn::hover {
-    background-color: transparent;
-    color: rgb(255, 0, 0);
-    font-size: 1.5rem;
-    text-shadow: 0 0 0.5rem white;
-  }
   
    /* Media query for mobile screens */
    @media screen and (max-width: 768px) {
